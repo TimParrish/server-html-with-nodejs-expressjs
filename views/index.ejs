@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dynamic HTML With EJS</title>
+
+    <style>
+      body {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>FizzBuzz HTML Generator With NodeJS, Express & EJS</h1>
+      <h2>Your FizzBuzz number: <%= data.userInput %></h2>
+      <p>
+        <% if (data.userInput % 3 == 0) { %> Fizz <% } %><% if (data.userInput %
+        5 == 0) { %> Buzz <% } %>
+      </p>
+    </div>
+    <div class="footer">
+      <a
+        href="https://www.npmjs.com/package/ejs"
+        alt="EJS package for NodeJS documentation"
+        >Documentation for the EJS package for NodeJS</a
+      >
+    </div>
+  </body>
+</html>

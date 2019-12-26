@@ -3,9 +3,11 @@ let expressWebServerInstance = express();
 let path = require("path");
 let portNumber = 8080;
 
-expressWebServerInstance.get("/simplePage/", function(req, res) {
-  console.log("sending the simple HTML page as a response");
-  res.sendFile(path.join(__dirname + "/html/index.html"));
+expressWebServerInstance.set("view engine", "ejs");
+
+expressWebServerInstance.get("/fizzbuzz/:userInput/", function(req, res) {
+  console.log("Endpoint hit! Sending the dynamic HTML page as a response");
+  res.render("index", { data: { userInput: req.params.userInput } });
 });
 
 expressWebServerInstance.listen(portNumber, () => {
