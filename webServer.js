@@ -13,6 +13,11 @@ expressWebServerInstance.get("/fizzbuzz/:userInput/", function(req, res) {
   res.render("index", { data: { userInput: req.params.userInput } });
 });
 
+expressWebServerInstance.get('*',function (req, res) {
+  console.log("Failed to hit the endpiont, redirecting to fizzbuzz with a value of 15");
+  res.redirect('/fizzbuzz/15/');
+});
+
 expressWebServerInstance.listen(portNumber, () => {
   console.log("Server initialized and listening on port " + portNumber + "!!!");
 });
