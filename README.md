@@ -10,3 +10,5 @@ Build steps:
   - assuming the portNumber variable at the top of the file is still set to 8080
 
 Simple test to server up html files using Node.js &amp; Express.js
+
+### [View the dynamic version with EJS on the 'dynamic-with-ejs' branch](https://github.com/TimParrish/server-html-with-nodejs-expressjs)
