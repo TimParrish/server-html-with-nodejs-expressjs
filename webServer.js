@@ -8,6 +8,11 @@ expressWebServerInstance.get("/simplePage/", function(req, res) {
   res.sendFile(path.join(__dirname + "/html/index.html"));
 });
 
+expressWebServerInstance.get('*',function (req, res) {
+  console.log("Failed to hit the endpiont, redirecting to simple HTML page route");
+  res.redirect('/simplePage');
+});
+
 expressWebServerInstance.listen(portNumber, () => {
   console.log("Server initialized and listening on port " + portNumber + "!!!");
 });
