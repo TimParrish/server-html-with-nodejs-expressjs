@@ -13,3 +13,5 @@ with no JavaScript.
 - 'node webServer.js'
 - navigate to [http://localhost:8080/fizzbuzz/{YOURNUMBER}](http://localhost:8080/fizzbuzz/15)
   - assuming the portNumber variable at the top of the file is still set to 8080
+
+### [View the static version without EJS on the 'static-with-express' branch](https://github.com/TimParrish/server-html-with-nodejs-expressjs/tree/static-with-express)
