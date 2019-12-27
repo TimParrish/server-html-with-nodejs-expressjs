@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  background-color: lightgrey;
+}
+.header h1 {
+  color: darkblue;
+  text-align: center;
+}
+.fizzbuzz p {
+  text-align: center;
+}
+.fizzbuzz h2 {
+  text-align: center;
+}
+.footer p {
+  text-align: center;
+}

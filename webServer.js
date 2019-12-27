@@ -3,6 +3,9 @@ let expressWebServerInstance = express();
 let path = require("path");
 let portNumber = 8080;
 
+//tell the Express server to use the '/css' folder in the project
+expressWebServerInstance.use(express.static(__dirname + '/css'));
+
 expressWebServerInstance.set("view engine", "ejs");
 
 expressWebServerInstance.get("/fizzbuzz/:userInput/", function(req, res) {

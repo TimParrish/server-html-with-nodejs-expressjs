@@ -3,34 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <title>Dynamic HTML With EJS</title>
-
-    <style>
-      body {
-        padding: 50px;
-        background-color: lightgray;
-      }
-      .header h1 {
-        color: darkblue;
-        text-align: center;
-      }
-      .fizzbuzz p {
-        text-align: center;
-      }
-      .fizzbuzz h2 {
-        text-align: center;
-      }
-      .footer p {
-        text-align: center;
-      }
-    </style>
+    <% 
+    if(data.userInput %2 == 0){ %> <link rel="stylesheet" type="text/css" href="/even.css"> <% } 
+    else{ %> <link rel="stylesheet" type="text/css" href="/odd.css"> <% }
+    %>
   </head>
+
   <body>
     <div class="header">
       <h1>FizzBuzz HTML Generator With NodeJS, Express & EJS</h1>
+
     </div>
     <div class="fizzbuzz">
       <p>
-        Pass your FizzBuzz number as a url parameter at the route
+        Pass your FizzBuzz number as a URL parameter at the route
         /fizzbuzz/yourNumber
       </p>
       <h2>Your FizzBuzz number: <%= data.userInput %></h2>
