@@ -11,4 +11,4 @@ Build steps:
 
 Simple test to server up html files using Node.js &amp; Express.js
 
-### [View the dynamic version with EJS on the 'dynamic-with-ejs' branch](https://github.com/TimParrish/server-html-with-nodejs-expressjs)
+### [View the dynamic version with EJS on the 'dynamic-with-ejs' branch](https://github.com/TimParrish/server-side-dynamic-html-with-ejs)
