@@ -3,7 +3,16 @@
 This simple application is to dynamically render HTML for a webpage using NodeJS, Express and EJS.
 You can pass the FizzBuzz number to the server through a url parameter that Express will catch and
 use to dynamically send a HTML response to the client. The client will see a simple HTML response
-with no JavaScript.
+with no JavaScript. The CSS stylesheet is selected based on if the URL parameter is given a even or odd
+number to evaluate for FizzBuzz
+
+### Result with a ODD number given as a url parameter
+
+![FizzBuzz Results Odd Number](/images/FizzBuzzResultsOdd.png)
+
+### Result with a EVEN number given as a url parameter
+
+![FizzBuzz Results Even Number](/images/FizzBuzzResultsEven.png)
 
 ### Build steps:
 
